@@ -5,13 +5,12 @@
  align-items: center;
  display:flex;
  justify-content: center;
- 
- background-image: url(images/webpage-background.jpg);
+ background-color: #1b1b21;
 }
 .App-header {
   min-height: 100vh;
   width: 100%;
-  width: 1440px;
+  width: 100%;
 }
 .App-Overlay{
   height: 100vh;
@@ -21,18 +20,11 @@
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  margin:30px;
-  padding: 0 30px;
+  margin:10px 0;
+  padding:10px 0;
 }
-  .App-ImgSection-1{
-  background-Image: url(images/19956901_664795280383494_6059474625841008870_o.jpg);
-  background-size: cover;
-  background-position: center center;
-  min-height: 50%;
-  border-radius: 2px;
-  width: 100%;
-}
-.App-ImgSection-2{
+
+.App-ImgSection{
   background-Image: url(images/19800622_664799630383059_6091622526287951920_o.jpg);
   background-size: cover;
   background-position: center center;
@@ -40,16 +32,6 @@
   border-radius: 2px;
   width: 100%;
 }
-
-.App-ImgSection-3{
-  background-Image: url(images/20017869_664795837050105_8420867846074740042_o.jpg);
-  background-size: cover;
-  background-position: center center;
-  min-height: 50%;
-  border-radius: 2px;
-  width: 100%;
-}
-
 
 .App-Title {
   color: white;
@@ -63,7 +45,7 @@
 }
 .App-Date {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Bungee', cursive;
   letter-spacing: 4px;
   margin: 0;
@@ -79,24 +61,45 @@
 }
 .App-Tickets h4{
   text-shadow: 1px 1px #000;
-  font-size: 25px;
+  font-size: 18px;
   margin:10px !important;
 }
 .App-button{
-  padding: 15px 50px;
+  padding: 15px 40px;
   border: 1px solid #fff;
   margin: 5px 5px 5px 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
   color:#fff;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   transition: all 0.4s;
   background-color: rgba(0, 0, 0, 0.507);
+  opacity: 0.5;
+}
+p{
+  margin: 0 !important;
 }
 
+/*
 .App-button:hover{
   background-color: #fff;
   color: #000;
+}
+*/
+
+@media only screen and (max-width: 425px) {
+  .App-Title{
+    font-size:20px;
+    padding:0 20px;
+    margin: 5px 0;
+  }
+  .App-Date{
+    font-size:20px;
+  }
+  .App-ImgCon{
+    margin:0;
+    padding:0;
+  }
 }

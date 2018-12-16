@@ -15,11 +15,7 @@ class App extends Component {
          </h1>
 
         <div className="App-ImgCon">
-          <div className="App-ImgSection-1">
-          </div>
-          <div className="App-ImgSection-2">
-          </div>
-          <div className="App-ImgSection-3">
+          <div className="App-ImgSection">
           </div>
         </div>
          <h2 className="App-Date">
@@ -29,9 +25,10 @@ class App extends Component {
 
          <h4>Get your Tickets here</h4>
 
-         <button className="App-button">
+         <button disabled className="App-button">
           Tickets
          </button>
+         <p>(Available soon)</p>
          
          </div>
         </div>
